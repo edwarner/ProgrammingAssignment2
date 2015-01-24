@@ -67,13 +67,13 @@ cacheSolve <- function(x, ...)
       return(inverse)
     }
     
-    ## cached inverse matrix does not exit
+    ## cached inverse matrix does not exist
     data <- x$get()
     
     ## calculate the inverse matrix
     inverse <- solve(data, ...)
     
-    ## store the inverse matrix
+    ## cache the inverse matrix
     x$setinverse(inverse)
     
     ## return the inverse matrix
